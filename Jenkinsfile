@@ -67,7 +67,7 @@ pipeline {
                     <p><b>Check console output at:</b> <a href="${env.BUILD_URL}">${env.BUILD_URL}</a></p>
                 """,
 
-                recipientProvider: [requestor(), developers()],
+                recipientProviders: [requestor(), developers()],
                 attachLog: true,
                 compressLog: true
             )
