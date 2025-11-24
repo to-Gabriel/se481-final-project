@@ -33,7 +33,7 @@ pipeline {
                     draft: false,
                     name: '"${env.RELEASE_TAG}"',
                     prerelease: false,
-                    repository: 'https://github.com/to-Gabriel/se481-final-project.git',
+                    repository: '${GITHUB_REPO}',
                     tag: '${env.RELEASE_TAG}',
                     commitish: '${env.GIT_COMMIT}'
                 )
