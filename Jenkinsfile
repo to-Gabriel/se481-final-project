@@ -30,18 +30,7 @@ pipeline {
 
         stage('Deliver (Release to Github)') { 
             steps {
-                githubRelease(
-                    credentialId: 'github-pat',
-
-                    user:"${GITHUB_USER}",
-                    repo: "${GITHUB_REPO}",
-
-                    tagName: "${RELEASE_TAG}",
-                    releaseName: "Release ${RELEASE_TAG}",
-                    releaseNotes: "Automated release of build #${BUILD_NUMBER}",
-
-                    artifactPatterns: 'target/*.jar'
-                )
+                createGitHubRelease credentialId: 'github-pat', draft: false, prerelease: false, repository: 'https://github.com/to-Gabriel/se481-final-project.git'
             }
         }
 
