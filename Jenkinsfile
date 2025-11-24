@@ -34,7 +34,8 @@ pipeline {
                     name: '"${env.RELEASE_TAG}"',
                     prerelease: false,
                     repository: 'https://github.com/to-Gabriel/se481-final-project.git',
-                    tag: '${env.RELEASE_TAG}'
+                    tag: '${env.RELEASE_TAG}',
+                    commitish: '${env.GIT_COMMIT}'
                 )
             }
         }
