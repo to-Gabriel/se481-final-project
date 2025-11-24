@@ -4,6 +4,7 @@ pipeline {
     agent any
 
     environment {
+        GITHUB_REPO = 'to-Gabriel/se481-final-project'
         RELEASE_TAG = "v1.0-b${BUILD_NUMBER}"
     }
 
@@ -28,14 +29,14 @@ pipeline {
         stage('Deliver (Release to Github)') { 
             steps {
                 createGitHubRelease(
-                    bodyText: 'Automated release of build #${env.BUILD_NUMBER}',
+                    bodyText: "Automated release of build #${env.BUILD_NUMBER}",
                     credentialId: 'github-pat',
                     draft: false,
-                    name: '"${env.RELEASE_TAG}"',
+                    name: "${env.RELEASE_TAG}",
                     prerelease: false,
-                    repository: '${GITHUB_REPO}',
-                    tag: '${env.RELEASE_TAG}',
-                    commitish: '${env.GIT_COMMIT}'
+                    repository: "${GITHUB_REPO}",
+                    tag: "${env.RELEASE_TAG}",
+                    commitish: "${env.GIT_COMMIT}"
                 )
             }
         }
