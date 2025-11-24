@@ -45,7 +45,7 @@ pipeline {
                     tagName: "${env.RELEASE_TAG}", 
                     uploadAssets: [
                         [
-                            filePath: 'target/*.jar',
+                            filePath: 'target/Asteroids.jar',
                             contentType: 'application/java-archive'
                         ]
                     ]
