@@ -38,6 +38,18 @@ pipeline {
                     tag: "${env.RELEASE_TAG}",
                     commitish: "${env.GIT_COMMIT}"
                 )
+
+                uploadGithubReleaseAsset(
+                    credentialId: 'github-pat',
+                    repository: "${env.GITHUB_REPO}",
+                    tagName: "${env.RELEASE_TAG}", 
+                    uploadAssets: [
+                        [
+                            filePath: 'target/*.jar',
+                            contentType: 'application/java-archive'
+                        ]
+                    ]
+                )
             }
         }
 
