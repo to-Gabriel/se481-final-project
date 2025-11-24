@@ -1,13 +1,13 @@
-package org.psnbtech.entity;
+package Asteroids.app.entity;
 
 import java.awt.Graphics2D;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.psnbtech.Game;
-import org.psnbtech.WorldPanel;
-import org.psnbtech.util.Vector2;
+import Asteroids.app.Game;
+import Asteroids.app.WorldPanel;
+import Asteroids.app.util.Vector2;
 
 public class Player extends Entity {
 	

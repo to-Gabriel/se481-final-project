@@ -1,4 +1,4 @@
-package org.psnbtech;
+package Asteroids.app;
 
 import java.awt.BorderLayout;
 import java.awt.event.KeyAdapter;
@@ -11,10 +11,10 @@ import java.util.Random;
 
 import javax.swing.JFrame;
 
-import org.psnbtech.entity.Asteroid;
-import org.psnbtech.entity.Entity;
-import org.psnbtech.entity.Player;
-import org.psnbtech.util.Clock;
+import Asteroids.app.entity.Asteroid;
+import Asteroids.app.entity.Entity;
+import Asteroids.app.entity.Player;
+import Asteroids.app.util.Clock;
 
 /**
  * The {@code Game} class is responsible for initializing and running the game.

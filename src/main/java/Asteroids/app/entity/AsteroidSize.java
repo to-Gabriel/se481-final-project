@@ -1,4 +1,4 @@
-package org.psnbtech.entity;
+package Asteroids.app.entity;
 
 import java.awt.Polygon;
 

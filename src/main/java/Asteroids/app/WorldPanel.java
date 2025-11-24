@@ -1,4 +1,4 @@
-package org.psnbtech;
+package Asteroids.app;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -11,8 +11,8 @@ import java.util.Iterator;
 
 import javax.swing.JPanel;
 
-import org.psnbtech.entity.Entity;
-import org.psnbtech.util.Vector2;
+import Asteroids.app.entity.Entity;
+import Asteroids.app.util.Vector2;
 
 /**
  * The {@code WorldPanel} is responsible for displaying the game to the user.

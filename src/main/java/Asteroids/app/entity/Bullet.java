@@ -1,9 +1,9 @@
-package org.psnbtech.entity;
+package Asteroids.app.entity;
 
 import java.awt.Graphics2D;
 
-import org.psnbtech.Game;
-import org.psnbtech.util.Vector2;
+import Asteroids.app.Game;
+import Asteroids.app.util.Vector2;
 
 /**
  * Represents a Bullet within the game world.
