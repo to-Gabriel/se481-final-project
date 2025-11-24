@@ -2,6 +2,14 @@
 
 pipeline {
     agent any
+
+    environment {
+        GITHUB_USER = 'to-Gabriel',
+        GITHUB_REPO = 'se481-final-project'
+
+        RELEASE_TAG = "v1.0-b${BUILD_NUMBER}"
+    }
+
     stages {
         stage('Build') { 
             steps {
