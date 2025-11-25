@@ -4,7 +4,6 @@ import Asteroids.app.entity.Entity;
 import Asteroids.app.entity.Player;
 import Asteroids.app.util.Vector2;
 
-import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
