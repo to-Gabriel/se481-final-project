@@ -4,6 +4,7 @@ import Asteroids.app.entity.Entity;
 import Asteroids.app.entity.Player;
 import Asteroids.app.util.Vector2;
 
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -89,5 +90,10 @@ public class WorlPanelTest {
         // Verify translated graphics context for the wrap
         // The World size is 550. If x=5, wrap should add 550.
         verify(mockG2d).translate(eq(5.0 + WorldPanel.WORLD_SIZE), eq(100.0));
+    }
+
+    @Test
+    void test_failure() {
+        fail("Purposely fail to verify pipeline performance");
     }
 }
