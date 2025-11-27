@@ -5,6 +5,7 @@ import Asteroids.app.entity.Player;
 import Asteroids.app.util.Vector2;
 
 import static org.mockito.ArgumentMatchers.eq;
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -89,5 +90,10 @@ public class WorlPanelTest {
         // Verify translated graphics context for the wrap
         // The World size is 550. If x=5, wrap should add 550.
         verify(mockG2d).translate(eq(5.0 + WorldPanel.WORLD_SIZE), eq(100.0));
+    }
+
+    @Test
+    public void testSomething_Else() {
+        // TODO: implement this test later
     }
 }
