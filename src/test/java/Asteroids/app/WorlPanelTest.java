@@ -91,9 +91,4 @@ public class WorlPanelTest {
         // The World size is 550. If x=5, wrap should add 550.
         verify(mockG2d).translate(eq(5.0 + WorldPanel.WORLD_SIZE), eq(100.0));
     }
-
-    @Test
-    public void testSomething_Else() {
-        // TODO: implement this test later
-    }
 }
